@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+.center{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+/* Fim tags gerais */
+
+
+/* header-banner */
+.header-banner{
+    padding: 20px 2%;
+    background-image: url('../img/HERO\ BACKGROUND.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    border-bottom: 2px solid #FFDD33;
+}
+
+.menu ul .btn-contato{
+    display: inline-block;
+    padding: 10px;
+    background-color: #0F3FD3;
+    border-radius: 10px;
+}
+
+.menu ul .btn-contato a{
+    color: white;
+    text-decoration: none;
+}
+
+.banner{
+    text-align: center;
+    padding: 100px 2%;
+}
+
+.banner h2{
+    font-size: 50px;
+    color: white;
+    font-weight: normal;
+}
+
+.banner p{
+    color: white;
+    margin: 30px 0;
+}
+
+.banner img{
+    max-width: 100%;
+}
+/* fim header-banner */
+
+
+/* section marcas */
+.marcas{
+    padding: 100px 2%;
+}
+
+.marcas .marcas-wraper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.marcas .marcas-wraper img{
+    width: calc(100% / 5);
+}
+/* fim marcas */
+
+/* section por-que-nos */
+.por-que-nos{
+    padding: 100px 2%;
+    background-color: #FBFCFE;
+}
+
+.por-que-nos .center > h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.por-que-nos .center > p{
+    text-align: center;
+    color: #7E92AC;
+    margin: 30px 0;
+}
+
+.wraper-diferenciais{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wraper-diferenciais .diferencial{
+    width: 30%;
+    margin: calc(10% / 6);
+    box-shadow: 0px 20px 40px #2426721C;
+    padding: 30px;
+}
+
+.wraper-diferenciais .diferencial p{
+    margin-top: 10px;
+    color: #7E92AC;
+    font-size: 16px;
+}
+/* fim por-que-nos */
+
+/* section cta */
+section.cta{
+    background-image: url('../img/BANNER\ IMG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 2%;
+    text-align: center;
+}
+
+.cta h2{
+    color: white;
+    font-weight: normal;
+    font-size: 50px;
+}
+
+.cta p{
+    color: white;
+    padding: 20px 0;
+}
+
+.cta a{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #FFDD33;
+    border-radius: 7px;
+    color: #0F3FD3;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* fim cta */
+
+
+/* section beneficios */
+.beneficios{
+    padding: 70px 2%;
+}
+
+.beneficios .center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.beneficios .lista-beneficios{
+    width: 50%;
+}
+
+.beneficios .lista-beneficios h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.beneficios .lista-beneficios img{
+    vertical-align: middle;
+    width: 56px;
+}
+
+.beneficios .lista-beneficios span{
+    display: inline-block;
+    width: calc(80% - 56px);
+    vertical-align: middle;
+    color: #7E92AC;
+    font-size: 16px;
+}
+
+
+.beneficios .lista-beneficios a{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #255AFF;
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.beneficios .img-beneficios{
+    max-width: 50%;
+}
+
+.beneficios .img-beneficios img{
+    max-width: 100%;
+}
+/* fim beneficios */
+
+/* section depoimentos */
+.depoimentos{
+    padding: 100px 2%;
+    background-color:  #FBFCFE;
+}
+
+.container-slider{
+    overflow:hidden;
+}
+
+.depoimentos .center > h2{
+    text-align: center;
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+.container-slider .slider-single{
+    width: calc(100% / 3);
+    background-color: white;
+    border: 5px solid #FBFCFE;
+    text-align: center;
+    min-height: 430px;
+    float: left;
+    padding: 30px;
+    box-shadow: 0px 20px 50px #70707016;
+    border-radius: 10px;
+
+}
+
+.container-slider .slider-single span{
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.container-slider .slider-single p{
+    margin-bottom: 20px;
+}
+/* fim depoimentos */
+
+/****SLICK SLIDER****/
+
+.slick-dots{
+    text-align: center;
+}
+
+.slick-dots li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dots li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+    margin-top: 30px;
+}
+
+li.slick-active button{
+	background: #373855;
+	color: #373855;
+}
+
+/****FIM SLICK SLIDER****/
+
+/* section contato */
+.contato{
+    padding: 100px 2%;
+}
+
+.contato h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.contato form{
+    max-width: 800px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.contato form input[name=nome],
+.contato form input[name=email]{
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid #C3CCE8;
+    outline: 0;
+    color: #7E92AC;
+    margin: 10px 0;
+}
+
+.contato form textarea{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #C3CCE8;
+    outline: 0;
+    color: #7E92AC;
+    margin: 10px 0;
+    resize: none;
+    padding: 10px;
+}
+
+.contato form input[type=submit]{
+    width: 100%;
+    background-color: #0F3FD3;
+    padding: 15px 0;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+/* fim contato */
+
+/* footer */
+footer{
+    background-color: #255AFF;
+    padding: 30px 2%;
+}
+
+footer .center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .center p{
+    color: white;
+}
+/* fim footer */
+
